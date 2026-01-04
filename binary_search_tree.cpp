@@ -14,11 +14,9 @@ public:
     // Value in the node
     int value;
 
-    // Constructor, sets the value
+    // Constructor
     TreeNode(int v) : value(v) {}
-    // Destructor, nifty trick to recursively delete all the nodes
-    //  be careful though, when you delete just a single node, make
-    //  sure that you set left and right = nullptr first
+    // Destructor
     ~TreeNode() {
         delete left;
         delete right;
@@ -30,7 +28,6 @@ private:
     TreeNode* root = nullptr;
 
 public:
-    // These functions do the actual work
     void insert(int v, TreeNode* &subtree){
         if(subtree == nullptr){
            subtree = new TreeNode(v);
@@ -176,7 +173,6 @@ public:
 int main(){
     Tree t;
     int value;
-    // Sample code to read and construct the tree.
     while(cin >> value && value != -1){
         t.insert(value);
     }
@@ -189,4 +185,5 @@ int main(){
         t.postOrderTraversal();
         cout << endl;
     }
+
 }

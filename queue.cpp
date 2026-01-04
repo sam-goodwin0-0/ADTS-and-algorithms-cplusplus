@@ -1,3 +1,5 @@
+// queue implemeneted using a dynamically-allocated array
+
 #include <iostream>
 using namespace std;
 
@@ -68,3 +70,4 @@ public:
     }
 
 };
+

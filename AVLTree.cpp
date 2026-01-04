@@ -1,3 +1,5 @@
+//a height-balanced BST
+
 #include <algorithm>
 using namespace std;
 
@@ -67,3 +69,4 @@ public:
     }
 
 };
+
